@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link href='https://fonts.googleapis.com/css?family=Diplomata SC' rel='stylesheet'>
+  <title>ByteBuzz</title>
+
+</head>
+<body>
+
+  <div class="landing">
+    <div class="bg">
+      <div class="bg-1"></div>
+      <div class="bg-2"></div>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container nav_container">
+      <div href="index.html" class="logo">
+        <span>BYTE</span>
+        <span>BUZZ</span>    
+      </div>
+      <ul class="nav_menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="message.html" class="nav-link ">Messages</a></li>
+        <li><a href="#" class="nav-link ">Contacts</a></li>
+        <li><a href="login.html" class="nav-link ">Signin</a></li>
+        <li><a href="#" class="nav-link ">About</a></li>
+      </ul>
+      <a href="#" class="wallet-btn"  onclick="alert('You are connected to the Blockchain Wallet')">
+        <div class="connect-wallet"><i class="fab fa-google-wallet"></i><span>Connect Wallet</span></div>
+      </a> 
+      
+      <button class="svgMenu" id="open-menu-btn" onclick="handleClick()"  role="button" tabindex="0" aria-expanded="false" aria-label="Open Menu">
+        <svg width="32" height="32" viewBox="0 0 100 100" class="icon">
+          <path class="path1">
+            <animate class="animate1" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+          </path>
+          <path class="path2">
+            <animate class="animate2" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+          </path>
+          <path class="path3">
+            <animate class="animate3" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+          </path>
+        </svg>
+      </button>
+
+    </div>
+  </nav>
+
+  <section class="unlock">
+    <div class="unlock_left">
+      <h1>"Unlock Connections, Securely Engage"</h1>
+      <h2>Effortless sing-in to connect with friends and communities, with top-notch security for worry-free interactions.</h2>
+    </div>
+    <div class="unlock_right">
+      <img src="images/Sign up illustrations.png" alt="">
+    </div>
+  </section>
+
+  <section class="list_form">
+    <form action="#" method="post" class="field">
+      <ul class="field_form">
+        <li class="input_form">
+          <label for="fname">First Name</label>
+          <input type="text" required name="fname" id="fname">
+        </li>
+        <li class="input_form">
+          <label for="lname">Last Name</label>
+          <input type="text" required name="lname" id="lname">
+        </li>
+        <li class="input_form">
+          <label for="uname">Username</label>
+          <input type="text" required name="uname" id="uname">
+        </li>
+        <li class="input_form">
+          <label for="email">Email</label>
+          <input type="email" required name="email" id="email">
+        </li>
+        <li class="input_form">
+          <label for="no">Phone Number</label>
+          <input type="number" required name="no" id="no">
+        </li>
+        <li class="input_form">
+          <label for="add">Address</label>
+          <input type="text" required name="add" id="add">
+        </li>
+        <li class="input_form">
+          <label for="password">Password</label>
+          <input type="text" required name="password" id="password" autocomplete="">
+        </li>
+        <li class="input_form">
+          <label for="password">Confirm Password</label>
+          <input type="text" required name="password" id="password" autocomplete="">
+        </li>
+      </ul>
+      <div class="check">
+        <div class="checkbox-container">
+          <input type="checkbox" required id="customCheckbox"/>
+          <span class="checkmark"></span>
+        </div>
+        <label for="customCheckbox">I hereby agree to the terms of services and privacy policy given by Byte Buzz.</label>  
+      </div>
+      <div class="done">
+        <button class="wallet-btn" type="submit">
+          <i class="fab fa-google-wallet"></i>Submit
+        </button>
+      </div>
+    </form>
+    <div class="account">
+      <p>Already have an account?</p>
+      <button class="btn">Sign-in</button>
+    </div>
+  </section>
+
+  <footer class="footer_container">
+    <div href="" class="footer_logo">
+      <span>BYTE</span>
+      <span>BUZZ</span>    
+    </div>
+    <ul class="footer_menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="message.html" class="nav-link">Messages</a></li>
+      <li><a href="#" class="nav-link">Contacts</a></li>
+      <li><a href="login.html" class="nav-link">Signin</a></li>
+      <li><a href="#" class="nav-link">About</a></li>
+    </ul>
+    <div class="pages">           
+      <ul class="footer_socials">
+          <li>
+            <a href="https://facebook.com"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+      </ul>
+      <p>Subscribe to our newsletter to receive update</p>
+      <form class="form">
+        <input type="email required" placeholder="Enter in your Email" required>
+        <button type="submit" class="btn"  onclick="alert('You have Subscribed')">Subscribe</button>
+      </form>
+
+  </div>
+
+  </footer>
+
+  <script src="./main.js"></script>
+
+
+</body>
+</html>

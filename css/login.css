@@ -1,0 +1,198 @@
+*{
+  padding: 0;
+  letter-spacing: 2px;
+}   
+footer{
+  top: 50px;
+}
+.unlock{
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+  padding: 50px 0;
+}
+.unlock_left h1{
+  font-size: 50px;
+  color: #fff;
+  padding: 30px 10px 0px 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.unlock_left h2{
+  font-size: 25px;
+  padding: 45px 15px;
+}
+.list_form{
+  display: grid;
+  grid-template-rows: 1fr 100px;
+}
+.field{
+  display: grid;
+  grid-template-rows: 1fr 70px 50px;
+}
+.field_form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  text-align: center;
+}
+.input_form label{
+  position: absolute;
+}
+.input_form input{
+  position: relative;
+  margin: 30px 0;
+  padding: 0px 10px;
+  width: 300px;
+  height: 35px;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#060606, #060606), linear-gradient(to right, #fb35b9, #3e0080);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;}
+.check{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin-left: 105px;
+}
+.check label{
+  margin-left: 10px;
+}
+.checkbox-container{
+  display: flex;
+  justify-content: end;
+}
+/* Hide the browser's default checkbox */
+.checkbox-container input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin-top: -15px;
+  margin-right: -15px;
+  height: 55px;
+  width: 55px;
+  z-index: 1;
+}
+/* Create a custom checkbox */
+.checkmark {
+  height: 25px;
+  width: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #fb35b9, #3e0080) 1;
+  background-color: transparent; 
+}
+/* When checked, display a checkmark symbol */
+.checkbox-container input:checked ~ .checkmark:before {
+  content: '\2713'; /* Unicode checkmark symbol */
+  color: rgb(255, 255, 255); /* Color for checked state */
+  margin: 0px 3px;
+  font-size: 17px;
+  font-weight: 900;
+}
+.done{
+  margin-left: 107px;
+}
+.done .wallet-btn{
+  cursor: pointer;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+
+}
+.account{
+  margin-left: 105px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.account button{
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 1025px) {
+  .field_form{
+    margin: 70px 200px 10px;
+  }
+  .check, .done, .account{
+    margin-left: 330px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .unlock{
+    grid-template-columns: 1fr .8fr;
+    margin: 30px 20px;
+  }
+  .unlock_left h1{
+    font-size: 35px;
+  }
+  .unlock_left h2{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .input_form input{
+    width: 250px;
+  }
+  .check, .done, .account{
+    margin-left: 60px;
+  }
+  .footer_container{
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 630px){
+  .check, .done, .account{
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px){
+  .unlock{
+    grid-template-columns: 1fr;
+  }
+  .unlock_left h1{
+    font-size: 40px;
+  }
+  .field_form{
+    grid-template-columns: 1fr;
+  }
+  .input_form input{
+    width: 400px;
+  }
+  .check, .done, .account{
+    margin-left: 20px;
+  }
+  .account{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+  }
+  .account button{
+    width: 150px;
+  }
+}
+@media screen and (max-width: 450px){
+  .input_form input{
+    width: 280px;
+  }
+}
+@media screen and (max-width: 350px){
+  .unlock{
+    grid-template-columns: 270px;
+    margin: 0;
+  }
+  .unlock_left h1, .unlock_left h2{
+    padding: 0;
+    padding-bottom: 40px;
+  }
+  .input_form input{
+    width: 270px;
+  }
+  .check, .done, .account{
+    margin-left: 0px;
+  }
+  .done{
+    margin-top: 10px;
+  }
+}

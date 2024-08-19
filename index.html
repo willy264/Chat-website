@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBuzz</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link href='https://fonts.googleapis.com/css?family=Diplomata SC' rel='stylesheet'>
+
+</head>
+<body>
+  
+  <div class="landing">
+    <div class="bg">
+      <div class="bg-1"></div>
+      <div class="bg-2"></div>
+    </div>
+  </div>
+
+
+  <nav>
+    <div class="container nav_container">
+      <div href="index.html" class="logo">
+        <span>BYTE</span>
+        <span>BUZZ</span>    
+      </div>
+      <ul class="nav_menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="message.html" class="nav-link ">Messages</a></li>
+        <li><a href="#" class="nav-link ">Contacts</a></li>
+        <li><a href="login.html" class="nav-link ">Signin</a></li>
+        <li><a href="#" class="nav-link ">About</a></li>
+      </ul>
+      <a href="#" class="wallet-btn"  onclick="alert('You are connected to the Blockchain Wallet')">
+        <div class="connect-wallet"><i class="fab fa-google-wallet"></i><span>Connect Wallet</span></div>
+      </a> 
+      
+      <button class="svgMenu" id="open-menu-btn" onclick="handleClick()"  role="button" tabindex="0" aria-expanded="false" aria-label="Open Menu">
+        <svg width="32" height="32" viewBox="0 0 100 100" class="icon">
+          <path class="path1">
+            <animate class="animate1" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+          </path>
+          <path class="path2">
+            <animate class="animate2" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+          </path>
+          <path class="path3">
+            <animate class="animate3" attributeName="d" dur="0.35s" repeatCount="1" fill="freeze" />
+          </path>
+        </svg>
+      </button>
+
+    </div>
+  </nav>
+
+  <header class="container header_container">
+
+    <div class="header_body">
+      <h1>Decentralized Chat Solutions: Empowering digital businesses with Secure Communication</h1>
+      <p>With its innovative network, Decentralized Chat Solutions is transforming digital communication and opening the door to unrestricted, safe digital interactions. It provides unparalleled security and anonymity</p>
+    </div>
+
+    <span class="wallet-btn" id="open_caret">
+      <div><i class="fa fa-registered"></i>Register Now</div>
+    </span>          
+    <span class="wallet-btn" id="close_caret">
+      <div><i class="fa fa-registered"></i>Register Now</div>
+    </span>          
+
+    <div class="drop_down">
+      <div class="contain">
+        <div class="header">
+          <div class="bran">Create an Account</div>
+          <h3 class="brandie">Fill the form to create an account</h3>
+          <button class="boot">
+            <i class="fa fa-camera
+            "></i>
+          </button>
+        </div>
+        <div class="body">
+          <form action="#" class="forms">
+            <div class="input-box boxx">
+              <label for="email">Username</label>
+              <input type="email" name="email" id="" placeholder="Enter your Username..." required>
+            </div>
+            <div class="input-box boxs">
+              <label for="password">Address</label>
+              <input type="password" name="password" placeholder=" * * * * * * * * * * * * *" required>
+            </div>
+            <div class="submit">
+            <button class="submit" onclick="alert('You are connected to the Blockchain Wallet')">Connect Wallet</button>
+            </div>
+  
+          </form>
+        </div>    
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="line">
+    <div class="line3"></div>
+    <div class="line4"></div>
+    <div class="line1"></div>
+  </div>
+
+  <section class="container features_container">
+    <div class="top">HIGH - <span>IMPACT</span> FEATURES</div>
+
+    <div class="layer-1">
+      <div class="scrollLeft">
+        <div class="left-layer">
+          <h3>End-to-End Encryption</h3>
+          <p>Byte Buzz prioritizes end-to-end encryption to ensure that user communications are secure and private. This encryption mechanism prevents unauthorized access to messages and ensures that only the intended recipients can decipher the content. By implementing strong encryption protocols, the platform can guarantee unparalleled security for digital interactions, protecting user data from interception or surveillance</p>
+        </div>
+      </div>
+      <div class="scrollRight">
+        <div class="right-layer">
+          <img src="images/amico.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="layer-2">
+      <div class="scrollLeft">
+        <div class="right-layer">
+          <img src="images/decentralized identity.png" alt="">
+        </div>
+      </div>
+      <div class="scrollRight">
+        <div class="left-layer">
+          <div class="text-box">
+            <h3>Decentralized Identity Management</h3>
+            <p>Byte Buzz allows users to maintain control over their personal information and online identities without relying on centralized authorities or intermediaries. By leveraging blockchain technology and self-sovereign identity principles, the platform can empower users to create, manage, and verify their identities independently. This approach enhances privacy, reduces the risk of identity theft, and enables safe digital interactions without sacrificing anonymity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layer-3">
+      <div class="scrollLeft">
+        <div class="left-layer">
+          <div class="text-box">
+            <h3>Zero-Knowledge Proof Authentication</h3>
+            <p>nables users to prove their identity or credentials without revealing any sensitive information to third parties. By leveraging cryptographic techniques, the platform can authenticate users' identities or attributes without storing or transmitting identifiable data. This approach ensures that users can participate in digital interactions anonymously while maintaining the integrity and security of the authentication process. Zero-knowledge proofs provide an additional layer of privacy and trust, enabling unrestricted and safe digital interactions on the platform.</p>
+          </div>
+        </div>  
+      </div>
+      <div class="scrollRight">
+        <div class="right-layer">
+          <img src="images/Zero knowledge.png" alt="">
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer_container">
+    <div class="footer_logo">
+      <span>BYTE</span>
+      <span>BUZZ</span>    
+    </div>
+    <ul class="footer_menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="message.html" class="nav-link">Messages</a></li>
+      <li><a href="#" class="nav-link">Contacts</a></li>
+      <li><a href="login.html" class="nav-link">Signin</a></li>
+      <li><a href="#" class="nav-link">About</a></li>
+    </ul>
+    <div class="pages">           
+      <ul class="footer_socials">
+          <li>
+            <a href="https://facebook.com"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+      </ul>
+      <p>Subscribe to our newsletter to receive update</p>
+      <form class="form">
+        <input type="email" placeholder="Enter in your Email" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+
+  </div>
+
+  </footer>
+
+
+
+  <script src="../my bootstrap/shorts/scrollreveal.min.js"></script>
+  <script src="./main.js"></script>
+
+
+</body>
+</html>

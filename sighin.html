@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBuzz</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link href='https://fonts.googleapis.com/css?family=Diplomata SC' rel='stylesheet'>
+</head>
+<style>
+  
+.drop_down{
+  display: none;
+  margin: 100px auto;
+  width: 50%;
+  min-height: 600px;
+  border-radius: 20px;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+.contain{
+  border-radius: 20px;
+  background-color: #330939;
+  margin: 100px auto;
+  color: #fff;
+  min-height: 750px;
+}
+.header{
+  position: relative;
+}
+.bran{
+  height: 60px;
+  text-align: center;
+  padding: 16px;
+  margin: auto;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 40px;
+}
+.brandie{
+  position: relative;
+  top: 55px;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+}
+.boot{
+  margin: 90px 0px 0px auto;
+  align-items: center;
+  font-size: 32px;
+  position: relative; 
+  display: inline-block;
+  border: 2.7px solid transparent; 
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%; 
+  background: linear-gradient(#000000 0 0) padding-box, linear-gradient(
+    to top left, 
+    #fb35b9 0%,
+    #fb35b9b8 14.29%,
+    #fb357094 25%,
+    transparent 50%,
+    #9c20aaa1 64.29%,
+    #7120aa 75%,
+    #7120aa 100%
+  ) border-box; 
+}
+.boot i{
+  background: linear-gradient(
+    to top, 
+    #6142c6 0%, 
+    #a742c6c6 50%,
+    #e72c51e4 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.body{
+  position: relative;
+  top: 60px;
+  height: 40%;
+  width: 100%;
+}
+.forms{
+  margin: 0 50px;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.input-box ~ .boxs{
+  position: relative;
+  top: 40px;
+}
+.input-box label{
+  position: absolute;
+  bottom: 75px;
+  transform: translateY(-50%);
+  font-weight: 700;
+}
+input:valid ~ label, input:focus ~label{
+  top: -5px;
+}
+.input-box input{
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  letter-spacing: 2px;
+  transition: all 2s ease;
+}
+.submit{
+  margin: 0 50px;
+}
+.submit button{
+  color: #fff;
+  margin: 100px auto 50px auto;
+  background: linear-gradient(
+  to right,
+  #8f15c7,
+  #ff01a2
+  );
+  width: 100%;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 2s ease;
+  border-radius: 20px;
+}
+</style>
+<body>
+  
+  <div class="drop_down">
+    <div class="contain">
+      <div class="header">
+        <div class="bran">Create an Account</div>
+        <h3 class="brandie">Fill the form to create an account</h3>
+        <button class="boot">
+          <i class="fa fa-camera
+          "></i>
+        </button>
+      </div>
+      <div class="body">
+        <form action="#" class="forms">
+          <div class="input-box boxx">
+            <label for="email">Username</label>
+            <input type="email" name="email" id="" placeholder="Enter your Username..." required>
+          </div>
+          <div class="input-box boxs">
+            <label for="password">Address</label>
+            <input type="password" name="password" placeholder=" * * * * * * * * * * * * *" required>
+          </div>
+          <div class="submit">
+          <button class="submit">Connect Wallet</button>
+          </div>
+
+        </form>
+      </div>    
+    </div>
+  </div>
+
+</body>
+</html>

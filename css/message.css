@@ -1,0 +1,203 @@
+*{
+  padding: 0;
+}
+p{
+  color: #686868bb;
+  padding: 5px 0px;
+}
+.side-button{
+  display: none;
+  color: #000;
+}
+.main-body{
+  margin: 10px auto;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: .9fr 2fr;
+  column-gap: 6px;
+}
+.profile-photo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main_left{
+  display: block;
+  color: #fff;
+  background: linear-gradient(to bottom,
+  #131313 0%,
+  #131313 50%,
+  #000 100%);
+  position: relative;
+  height: 100vh;
+  border: 1px solid #707070;
+  border-bottom: none;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  margin-left: 5px; 
+}
+.main-body .main_left .left_top{
+  border: 2px solid #7070707b;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  padding: 25px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.main_left .left_top .update .message{
+  overflow: hidden;
+  width: 100px;
+}
+.main-body .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  border: 2px solid #707070;
+  border-radius: 5px;
+}
+.main-body .icon i{
+  color: #707070;
+}
+.main-body .left_bottom{
+  background: transparent;
+  padding: 10px;
+  transition: all 300ms ease;
+}
+.main-body .main_left .left_bottom input{
+  color: #fff;
+  position: relative;
+  margin: 20px 0;
+  padding: 20px 0px 20px 45px;
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px double transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#131313, #131313), linear-gradient(to right, #fb35b9, #3e0080);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.main-body .main_left .update{
+  display: grid;
+  grid-template-columns: 35px auto;
+  column-gap: 40px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.left_bottom .search{
+  position: relative;
+}
+.left_bottom i{
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  color: #707070;
+}
+
+.main_right{
+  background: linear-gradient(to bottom,
+  #1B1B1B 0%,
+  #1B1B1B 50%,
+  #000 100%
+  );
+  position: relative;
+  height: 100vh;
+  border: 1px solid #707070;
+  margin-right: 5px;
+  border-bottom: none;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.main_right .right_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131313;
+  border: 1px solid #7070707b;
+  padding: 15px 10px 15px 10px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.main_right .right_top .icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+}
+.main-body .main_right .update{
+  display: grid;
+  grid-template-columns: 35px auto;
+  column-gap: 40px;
+  align-items: center;
+  margin: 10px 0px 10px 25px;
+}
+.right_bottom input{
+  background-color: transparent;
+  color: white;
+  position: relative;
+  margin: 10px 0;
+  width: 100%;
+}
+.right_chat1{
+  background-color: #200c0c41;
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+.right_chat2{
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-body{
+    grid-template-columns: 150px 1fr;
+  }
+  .side-menu{
+    /* position: absolute; */
+    /* display: grid;
+    grid-template-columns: 1fr 20px;
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+    transform: translateX(-351px);
+    transition: all 100ms linear; */
+  }
+  .side-menu:hover{
+    /* transform: translateX(0px); */
+  }
+  /* .side-menu .main_left{
+    max-height: 1000px;
+    width: fit-content;
+    overflow-y: auto;
+    border-bottom-right-radius: 20px;
+  }
+  .side-button{
+    cursor: pointer;
+    display: block;
+  }
+  .side-button .side_light, .side-button .side_close{
+    width: 100px;
+    height: 20px;
+    background: #ffffffaf;
+    transform: rotateZ(90deg) rotateY(0deg);
+    clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
+    cursor: pointer;
+  } */
+}
+
+
+@media screen and (max-width: 800px) {
+  .main-body{
+    grid-template-columns: 1fr;
+  }
+  .main_right{
+    display: none;
+  }
+}
